@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css"/>
+    <script src="script.js"></script>
+    <title>CalculAR</title>
+  </head>
+  <body class="container-fluid">
+    <nav>
+      <ul>
+        <li><strong>CalculAR</strong></li>
+      </ul>
+      <ul>
+        <li>
+          <details class="dropdown">
+            <summary>
+              Enlaces
+            </summary>
+            <ul dir="rtl">
+              <li><a href="https://www.consejo.org.ar/herramientas-profesionales/ajuste-por-inflacion" target="_blank">Índices IPIM</a></li>
+              <li><a href="https://www.bna.com.ar/Personas" target="_blank">Valor dólar oficial</a></li>
+              <li><a href="https://dolarhoy.com/cotizaciondolarblue" target="_blank">Valor dólar blue</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+    <h2>Calculadora inflacionaria</h2>
+    <hr />
+    <form id="calculator-form">
+      <main>
+        <label for="montoARS" class="label">Monto ARS</label>
+        <input type="number" placeholder="$ARS" aria-label="Monto ARS" id="montoARS" min="1" required>
+        <small>Ej: 300.000</small>
+        <label for="fecha" class="label">Mes última actualización</label>
+        <input type="month" placeholder="MM" aria-label="fecha" id="fecha" required>
+        <button type="submit" id="submit"> <strong> CalculAR</strong></button>
+        
+        <pre id="results"></pre> <!-- Esto estaba fuera del formulario, ahora está dentro -->
+      </main>
+    </form>
+    <hr />
+    <footer>06.2024</footer>  
+</body>
+</html>
