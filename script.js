@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var perdidaFormateado = perdida.toLocaleString('es-AR');
     
       // Mostramos el resultado en el campo de resultados
-      document.getElementById('results').innerText = "Tu sueldo debería ser de: " + (resultadoFormateado + " ARS") + ". Actualmente has perdido " + (perdidaFormateado) + " contra la inflación, es decir, un " + (perdidaporc)+"%.";
+      document.getElementById('results').innerText = "Tu sueldo debería ser de: " + (resultadoFormateado + " ARS") + ". Actualmente has perdido " + (perdidaFormateado) + "ARS contra la inflación, es decir, un " + (perdidaporc)+"%.";
     } else {
       // Si la fecha no existe en la tabla, mostramos un mensaje de error
       document.getElementById('results').innerText = "Fecha no válida";
