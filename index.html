@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css" />
+  <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
   <title>CalculAR</title>
 </head>
+
 <body class="container-fluid">
   <nav>
     <ul>
-      <li><strong>Hola Florcita!</strong></li>
+      <li><strong>Hola!</strong></li>
     </ul>
     <ul>
       <li>
@@ -30,22 +33,38 @@
     </ul>
   </nav>
   <h2>Calculadora inflacionaria</h2>
-  <p>Ingresa tu sueldo actual y el mes de tu último aumento para ver como se encuentra con respecto a la inflación</p>
+  <p>Ingresá tu sueldo actual y el mes de tu último aumento para ver como se encuentra con respecto a la inflación</p>
   <hr />
   <form id="calculator-form">
     <main>
+      <div class="grid">
+      <div></div>
+        <div>
       <label for="montoARS" class="label">Monto ARS</label>
       <input type="number" placeholder="$ARS" aria-label="Monto ARS" id="montoARS" min="1" required>
       <small>Sin separadores, ej: 300000</small>
+    </div>
+    <div>
       <label for="fecha" class="label">Mes última actualización</label>
       <input type="month" placeholder="MM" aria-label="fecha" id="fecha" required>
-      <small>Actualizado con índices a Mayo de 2024</small>
-      <hr />
-      <button type="submit" id="submit"> <strong> CalculAR</strong></button>
-      <pre id="results"></pre> <!-- Esto estaba fuera del formulario, ahora está dentro -->
+      <small>Actualizado con índices a Abril de 2024</small>
+    </div>
+    <div></div>
+  </div>
+    <hr>  
+    <div class="grid">
+    <div></div>
+    <div>
+    <button type="submit" id="submit"> <strong> CalculAR</strong></button>
+      <p id="results"></p>
+    </div>  
+    <div></div>
+    </div>
     </main>
   </form>
-  <hr />
-  <footer></footer>
+  
+  <footer>🩵🤍🩵</footer>
 </body>
+
 </html>
+
